@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &mdash; Family History</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="index.html"><span>&#9670;</span> Family History</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h1 class="page-title">Contact Us</h1>
+
+    <section class="card">
+      <h2>Get in Touch</h2>
+      <p>
+        Have a correction, a family photograph, or a story to share? We welcome contributions from relatives and fellow researchers. Fill out the form below and we&rsquo;ll get back to you as soon as we can.
+      </p>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Select a topic&hellip;</option>
+            <option value="correction">Correction or Update</option>
+            <option value="contribution">Photo or Document Contribution</option>
+            <option value="question">Research Question</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Send Message</button>
+      </form>
+    </section>
+
+    <aside class="card">
+      <h2>Other Ways to Reach Us</h2>
+      <dl class="vital-facts">
+        <dt>Email</dt>
+        <dd><a href="mailto:info@example.com">info@example.com</a></dd>
+        <dt>Mail</dt>
+        <dd>Family History Project, P.O. Box 1234, Charlottesville, VA 22902</dd>
+      </dl>
+    </aside>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">&copy; 2026 Family History Project</p>
+      <nav class="site-footer__links" aria-label="Footer navigation">
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="#">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

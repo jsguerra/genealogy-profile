@@ -1,0 +1,61 @@
+/* ── Relationship Tags ── */
+.rel-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
+
+.rel-tag.biological {
+  background: #e8f0e4;
+  color: #4a7a3d;
+}
+
+.rel-tag.step {
+  background: #e4ecf5;
+  color: #3d5f8a;
+}
+
+.rel-tag.adopted {
+  background: #f3e8f5;
+  color: #7a3d8a;
+}
+
+/* ── Spouse grid (full-width) ── */
+.spouse-section {
+  grid-column: 1 / -1;
+}
+
+.spouse-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.25rem;
+  list-style: none;
+  padding: 0;
+}
+
+.spouse-grid li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--clr-border);
+  font-size: 0.95rem;
+}
+
+.spouse-grid li:last-child {
+  border-bottom: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .spouse-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spouse-section {
+    grid-column: 1;
+  }
+}
